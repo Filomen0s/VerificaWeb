@@ -19,6 +19,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('API VerificaWeb funcionando!');
+});
+
 app.patch('/insert', async (req, res) => {
     const result = await pool.query(
         'UPDATE Apoiadores SET apoio = apoio + 1 RETURNING apoio'

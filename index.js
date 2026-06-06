@@ -42,7 +42,7 @@ document.getElementById('apoiar-btn').addEventListener('click', async () => {
     btn.style.opacity = '0.7';
 
     try {
-        const response = await fetch('http://localhost:3000/insert', { method: 'PATCH' });
+        const response = await fetch('https://verificaweb.onrender.com', { method: 'PATCH' });
         const data = await response.json();
         console.log('Novo total:', data.apoio);
     } catch (e) {
