@@ -1,4 +1,11 @@
 {
+  "name": "verificaweb-api",
+  "version": "1.0.0",
+  "main": "db.js",
+  "scripts": {
+    "start": "node db.js",
+    "dev": "nodemon db.js"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
