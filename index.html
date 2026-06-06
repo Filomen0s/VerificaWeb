@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VerificaWeb — Combate à Desinformação</title>
+    <link rel="shortcut icon" href="images/LogoSite.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">
+            <span class="logo-dot"></span>
+            VerificaWeb
+        </a>
+        <span class="nav-tag">v1.0 · em desenvolvimento</span>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-eyebrow">Extensão de Navegador</div>
+        <h1>Combate à<br /><span>Desinformação</span><br />na Internet</h1>
+        <p class="hero-sub">// análise de conteúdo com inteligência artificial</p>
+
+        <div class="badge-row">
+            <span class="badge"><span class="badge-dot green"></span>Verdadeiro</span>
+            <span class="badge"><span class="badge-dot yellow"></span>Duvidoso</span>
+            <span class="badge"><span class="badge-dot red"></span>Falso</span>
+        </div>
+
+        <div class="divider"></div>
+    </header>
+
+    <!-- TEXT -->
+    <section class="text-section">
+
+        <h2>Sobre o Projeto</h2>
+
+        <p>Vivemos em uma era em que a informação circula de forma rápida e constante pela internet. No entanto, junto
+            com conteúdos confiáveis, também são compartilhadas <span class="highlight">notícias falsas, informações
+                distorcidas e conteúdos enganosos</span> que podem influenciar decisões, opiniões e comportamentos.</p>
+
+        <p>Pensando nesse desafio, este projeto propõe o desenvolvimento de uma extensão para navegadores capaz de <span
+                class="highlight">analisar automaticamente o conteúdo das páginas acessadas</span> pelos usuários e
+            identificar possíveis fake news. Utilizando tecnologias de análise de dados e inteligência artificial, a
+            ferramenta avaliará as informações encontradas e as classificará em três categorias: <span
+                class="highlight">Verdadeiras, Duvidosas ou Falsas.</span></p>
+
+        <p>O principal objetivo é oferecer mais <span class="highlight">segurança digital</span> aos usuários,
+            auxiliando na verificação da confiabilidade das informações consumidas diariamente na internet —
+            incentivando uma navegação mais consciente, crítica e segura.</p>
+
+        <p>Ao apoiar este projeto, você estará contribuindo para a criação de uma ferramenta que pode ajudar milhares de
+            pessoas a identificar conteúdos enganosos, fortalecer o acesso à informação de qualidade e <span
+                class="highlight">promover um ambiente digital mais confiável para todos.</span></p>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="carousel-section">
+        <div class="carousel-wrap">
+            <div class="carousel-track">
+
+                <div class="carousel-slide active">
+                    <img src="images/Confiavel.png"
+                        alt="Resultado da análise: Confiável — informação verdadeira e apoiada por fontes confiáveis" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/Duvidoso.png"
+                        alt="Resultado da análise: Duvidoso — não há evidências suficientes para confirmar a informação" />
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/Falso.png"
+                        alt="Resultado da análise: Falso — informação desmentida por fontes confiáveis" />
+                </div>
+
+            </div>
+
+            <button class="carousel-btn prev" aria-label="Anterior">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M9 11L5 7L9 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button class="carousel-btn next" aria-label="Próximo">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M5 3L9 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="carousel-dots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <button class="btn-primary" id="apoiar-btn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2L9.5 5.5L13.5 6L10.75 8.7L11.5 12.8L8 10.9L4.5 12.8L5.25 8.7L2.5 6L6.5 5.5L8 2Z"
+                    fill="currentColor" />
+            </svg>
+            Apoiar Projeto
+        </button>
+        <div id="apoiar-msg"
+            style="display:none; align-items:center; justify-content:center; gap:10px; color:#22C55E; font-family:'Syne',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.01em;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2L10.6 5.8L14.8 6.4L11.9 9.2L12.6 13.5L9 11.5L5.4 13.5L6.1 9.2L3.2 6.4L7.4 5.8L9 2Z"
+                    fill="#22C55E" />
+            </svg>
+            Muito obrigado por apoiar o nosso projeto!
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2L10.6 5.8L14.8 6.4L11.9 9.2L12.6 13.5L9 11.5L5.4 13.5L6.1 9.2L3.2 6.4L7.4 5.8L9 2Z"
+                    fill="#22C55E" />
+            </svg>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-copy">Projeto de Combate à Desinformação © 2026</p>
+    </footer>
+
+</body>
+</html>
