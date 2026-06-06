@@ -13,5 +13,11 @@ Ao acessar um site, a extensão realizará uma análise do conteúdo e classific
 ❌ Falso — Conteúdo com indícios de desinformação ou contradito por fontes verificadas.
 
 O objetivo é auxiliar usuários na tomada de decisões mais informadas e incentivar uma navegação mais segura e consciente.
-#
+
+<h1>
+  <a href="https://verifica-web.netlify.app/">
+    LINK DO PROJETO
+  </a>
+</h1>
+
 # Esta é uma versão aonde buscamos quantas pessoas apoiam o nosso projeto!
