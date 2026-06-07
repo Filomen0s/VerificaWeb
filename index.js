@@ -36,9 +36,29 @@ document.querySelector('.carousel-wrap').addEventListener('mouseleave', () => {
     autoplay = setInterval(() => goTo(current + 1), 4000);
 });
 
+
+
+const btn = document.getElementById('apoiar-btn');
+
+if (localStorage.getItem("voto") === null) {
+    localStorage.setItem("voto", "false");
+}
+
+// Recupera o valor
+const voto = localStorage.getItem("voto") === "true";
+
+if (!voto) {
+    console.log(null);
+} else {
+    btn.style.display = 'none';
+    const msg = document.getElementById('apoiar-msg');
+    msg.style.display = 'flex';
+    msg.style.animation = 'fadeUp 0.5s ease both';
+}
+
+
 // CTA button
 document.getElementById('apoiar-btn').addEventListener('click', async () => {
-    const btn = document.getElementById('apoiar-btn');
     btn.style.pointerEvents = 'none';
     btn.style.opacity = '0.7';
 
@@ -49,6 +69,8 @@ document.getElementById('apoiar-btn').addEventListener('click', async () => {
     } catch (e) {
         // Server might not be running in preview
     }
+
+    localStorage.setItem("voto", "true");
 
     btn.style.display = 'none';
     const msg = document.getElementById('apoiar-msg');
