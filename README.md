@@ -1,4 +1,4 @@
-# VerificaWeb
+# VerifiqueAqui
 
 🔎 Uma extensão de navegador criada para ajudar usuários a identificar possíveis fake news e verificar a confiabilidade de conteúdos encontrados na internet.
 
@@ -15,7 +15,7 @@ Ao acessar um site, a extensão realizará uma análise do conteúdo e classific
 O objetivo é auxiliar usuários na tomada de decisões mais informadas e incentivar uma navegação mais segura e consciente.
 
 <h1>
-  <a href="https://verifica-web.netlify.app/">
+  <a href="https://verifiqueaquimvp.netlify.app/">
     LINK DO PROJETO
   </a>
 </h1>
